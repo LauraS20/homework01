@@ -1,0 +1,271 @@
+
+/* 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+h1{
+    color: #414141;
+    font-size: 1.6em;
+}
+
+strong{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 100%;
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    background-color: #f1f1f1;
+    padding: 2px;
+    font-size: 100%;
+}
+
+.link-in-text {
+  color: inherit;
+}
+
+.link-in-text:hover {
+  color: coral;
+  text-decoration: underline;
+}  
+
+.link-in-text:active {
+  color: crimson;
+  font-weight: bold;
+}
+
+.link-in-text:visited {
+  color: darkslategrey;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  padding-top: 1.2em;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.text-w-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-in-text {
+  width: 192px 192px;
+  border: 5px dotted lightskyblue;
+}
+
+/* Multilevel list */
+.multilevel-list ol {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.multilevel-list ol > li {
+  counter-increment: item;
+}
+
+.multilevel-list ol > li:before {
+  content: counters(item, ".") ". ";
+}
+
+.multilevel-list li ol > li:before {
+  content: counters(item, ".") " ";
+}
+
+/* top menu  */
+.top-menu {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 20px;
+}
+
+.page_title {
+  display: flex;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: grey;
+}
+
+/* 3bar menu  */
+.bar_menu {
+  display: flex;
+}
+
+.nav div {
+  height: 4px;
+  background-color: grey;
+  margin: 5px 0;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.nav {
+  width: 30px;
+  display: block;
+  margin: 0 0 0 0;
+}
+
+.one {
+  width: 30px;
+}
+
+.two {
+  width: 20px;
+}
+
+.three {
+  width: 25px;
+}
+
+.nav:hover div {
+  width: 30px;
+  background-color: purple;
+}
+
+/* drop down menu  */
+.dropbtn {
+  color: white;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 120px;
+  z-index: 1;
+  font-size: 0.9em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 10px 12px; 
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: purple;
+  background-color: whitesmoke;
+  font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content-container{
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  font-family: 'Style Script';
+  font-size: 3em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.color-block1, .color-block2, .color-block3, .color-block4, .color-block5, .color-block6{
+  width: 31%;
+  height: 200px;
+  border: 10px solid white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.color-block1, .color-block3, .color-block5{
+  background-color: purple;
+  cursor: pointer;
+}
+
+.color-block1:hover, .color-block3:hover, .color-block5:hover{
+  opacity: 0.5;
+}
+
+.color-block2{
+  background-image: url("links.jpg");
+  background-size: 100% 100%;
+}
+
+.color-block2:hover{
+  opacity: 0.5;
+}
+
+.color-block4{
+  background-image: url("grid.jpg");
+  background-size: 100% 100%;
+}
+
+.color-block4:hover{
+  opacity: 0.5;
+}
+
+.color-block6{
+  background-image: url("grass.jpg");
+  background-size: 100% 100%;
+}
+
+.color-block6:hover{
+  opacity: 0.5;
+}
+
+.go-to-top{
+  color: grey;
+  font-size: 0.8em;
+}
+
+.go-to-top:hover{
+  color: orange;
+  font-weight: bold;
+}
+
+fieldset {
+  border: 0px;
+  margin: 0px;
+  width: 30%;
+}
+
+/* Rotating image  */
+  .rotate {
+    animation: rotation 8s infinite linear;
+    margin: 10px;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
