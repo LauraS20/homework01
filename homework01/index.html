@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Imperfect and foolish while learning</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap">
+        <link rel="icon" href="favicon-32x32.png">
+    </head>
+
+<body>
+
+ <!-- Top menu  -->
+    <div class="top-menu">
+        <div class="page_title" id="top">Cheatsheet</div>
+        <div class="bar_menu">
+            <div class="dropdown">
+                <button class="dropbtn">
+                <a href="#" class="nav">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </a></button>
+                <div class="dropdown-content">
+                    <a href="#txt-block1">Basics</a>
+                    <a href="#txt-block2">Lists</a>
+                    <a href="#txt-block3">Links</a>
+                    <a href="#txt-block4">Forms</a>
+                    <a href="#txt-block5">Images</a>
+                    <a href="#txt-block6">Something</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+<!-- Alternative menu -->
+
+<div class="content-container">
+    <div class="color-block1"><a href="#txt-block1">Basics</a></div>
+    <div class="color-block2"><a href="#txt-block2">Lists</a></div>
+    <div class="color-block3"><a href="#txt-block3">Links</a></div>
+    <div class="color-block4"><a href="#txt-block4">Forms</a></div>
+    <div class="color-block5"><a href="#txt-block5">Images</a></div>
+    <div class="color-block6"><a href="#txt-block6">Something</a></div>
+</div>
+
+<!-- Content -->
+
+<h1 id="txt-block1">Basics</h1>
+<p>Every html page must contain 5 tags:</p>
+    <ul>
+        <li><code>DOCTYPE</code> defines the document type;</li>
+        <li><code>html</code> says where the document starts and ends; </li>
+        <li><code>head</code> contains metadata/information about the document;</li>
+        <li><code>title</code> located in header, defines name of the page; </li>
+        <li><code>body</code> defines the document's body or content. </li>
+    </ul>
+<p>Most of elements have an opening tag and a closing tag. <br>
+   Some elements have only opening tag, for instance br, link. </p>
+
+<a href="#top" class="go-to-top">OK ↑ </a>
+
+
+<h1 id="txt-block2">Lists</h1>
+<p>Lists can be either:</p>
+   <ul>
+       <li>unordered listis used to group a set of related items in no particular order,</li>
+       <li>ordered list is used to group a set of related items in a specific order,</li>
+       <li>description list is used to display name/value pairs such as terms and definitions.</li>
+   </ul>
+<p><strong>Unordered (bulleted) lists</strong>  are used when a set of items can be placed in any order, fx, a shopping list. Bullet styles can be adjusted in CSS.</p>
+   <ul>
+       <li>bread,</li>
+       <li>milk,</li>
+       <li>chocolate.</li>
+   </ul>
+
+<p><strong>Ordered (numbered) lists</strong> are used to display a list of items that should be in a specific order, fx, steps to get your file on Github:</p>
+   <ol>
+       <li>Add or change file in Explorer </li>
+       <li>Save </li>
+       <li>Open Source Control </li>
+       <li>Stage Changes by pressing + </li>
+       <li>Commit by pressing V and describe fx "Adding index" </li>
+       <li>In Terminal "git push origin main"</li>
+   </ol>
+<p><strong>Description lists</strong> associate specific names and values within a list, fx, an ingredient list. Can be made also in CSS with <code>none</code>.</p>
+   <dl>
+        <dt>To bake a bread, you need:</dt>
+            <dd>flour</dd>
+            <dd>milk</dd>
+            <dd>butter</dd>
+         <dt>To bake a cake, add:</dt>
+            <dd>eggs</dd>
+            <dd>sugar</dd>
+   </dl>
+<p><strong>Nested list</strong> (multilevel list) is a list item that contains another entire list, fx, table of contents.</p>
+   <p>Plant classification:</p>
+   <ul class="multilevel-list">
+       <li>Flowering plants</li>
+            <ol>
+                <li>Asparagaceae</li>
+                    <ol>
+                        <li>Camassia</li>
+                            <ol>
+                                <li>Camassia angusta </li>
+                                <li>Camassia cusickii</li>
+                                <li>Camassia howellii</li>
+                            </ol>
+                        <li>Hosta</li>
+                        <li>Scilla</li>
+                    </ol>
+                <li>Bromeliaceae</li>
+                <li>Magnoliaceae</li>
+            </ol>     
+            </ol>
+       <li>Conifers</li>
+       <li>Ferns</li>
+       <li>Mosses</li>
+   </ul>
+
+ <a href="#top" class="go-to-top">OK ↑ </a>
+
+
+<h1 id="txt-block3">Links</h1>
+<p> Hyperlinks or links can be absolute or relative.</p>
+<p><strong>Absolute links</strong> contain a full web address, fx to 
+    <a href="https://google.com" class="link-in-text" target="_blank" title="Visit Google.com">google.com</a>. </p>
+<p><strong>Relative links</strong> are local links that can be scheme-relative (<code>//example.com</code>), 
+    origin-relative (<code>en/uploads/images</code>) or directory relative (<code>./p</code>).</p>
+<p>Use <code>title</code> to tell the user something about the link.</p>
+<p>Links can be opened in a tab, window or <code>iframe</code>. Use <code>target</code> to define where to open the link: <br>
+    <ul>
+        <li><code>_self</code> in current setting (default),</li>
+        <li><code>_blank</code> a new tab unless the browser has a custom configuration,</li>
+        <li><code>_parent</code>,</li>
+        <li><code>_top</code>.</li>
+    </ul>
+</p>
+<p>Links can be used for contact details such as email and phone number. <br>
+Send me an <a href="mailto:test@test.com" class="link-in-text">e-mail</a> or <a href="tel:+(0) 987 654 321" class="link-in-text">call me</a> anytime! </p>
+
+<p>In CSS use<br>
+    <ul>
+        <li><code>a:link</code> - never visited,</li>
+        <li><code>a:visited</code> - visited,</li>
+        <li><code>a:active</code> - on click,</li>
+        <li><code>a:hover</code> - on rolover.</li>
+    </ul>
+</p>
+
+<a href="#top" class="go-to-top">OK ↑ </a>
+
+
+<h1 id="txt-block4">Forms</h1>	
+<p>Forms are used to collect user input.</p>
+
+    <form action="">
+        <fieldset>
+            <legend>Mark all valid answers</legend>
+               <input type="checkbox" id="answer1" name="answer1">
+               <label for="answer1">Answer1</label><br>
+               <input type="checkbox" id="answer2" name="answer2">
+               <label for="answer2">Answer2</label><br>
+               <input type="checkbox" id="answer3" name="answer3" checked>
+               <label for="answer3">Answer3 checked</label>
+            </fieldset>
+
+        <fieldset>
+            <legend>Only one answer valid</legend>
+               <input type="radio" id="answer4" name="answer4" value="1">
+               <label>Answer4</label><br>
+               <input type="radio" id="answer5" name="answer4" value="2">
+               <label>Answer5</label><br>
+               <input type="radio" id="answer6" name="answer4" value="3">
+               <label>Answer6</label>
+            </fieldset>
+
+        <fieldset>
+            <legend>Login</legend>
+            <label for="username">Username </label>
+            <input type="text" id="username"><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="8" maxlength="30">            
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell me something</legend>
+            <textarea name="text" id="story" cols="30" rows="10" placeholder="Type it in here..."></textarea>
+        </fieldset>
+
+        <p>I am done! 
+            <button class="send">Send</button>
+        </p>
+    </form>
+
+<a href="#top" class="go-to-top">OK ↑ </a>
+
+			
+<h1 id="txt-block5">Images</h1>
+<p>It is possible to add an image an make it turn around. <br>
+    <img src="android-chrome-192x192.png" alt="Let's spin!" class="rotate">
+</p>
+
+<a href="#top" class="go-to-top">OK ↑ </a>
+
+<h1 id="txt-block6">Something </h1>
+<div class="text-w-images">
+    <div>
+        <p>Eiusmod dolor eu sint quis incididunt sunt elit sunt ut anim cillum eiusmod. Sunt ipsum laborum labore sunt anim ut dolore. Qui ullamco non quis pariatur voluptate. Dolor commodo magna culpa reprehenderit tempor proident dolore est sunt.</p>
+        <p>Culpa nostrud cupidatat irure adipisicing nostrud sunt eu fugiat ex cupidatat. Incididunt ipsum deserunt sit enim et. Aute nisi qui ea Lorem in laborum nisi sunt. Sit qui labore veniam ipsum elit esse commodo. Ullamco velit esse cillum dolor. Proident fugiat nulla consectetur et labore Lorem nostrud cillum exercitation elit do ullamco laboris esse. Quis adipisicing aliquip nisi amet sunt veniam deserunt occaecat pariatur.</p>
+        <p>Consequat dolor excepteur laboris pariatur laboris officia labore anim. Ea veniam adipisicing nisi cillum ex dolor in cillum est dolor ex. Nostrud do est excepteur fugiat deserunt enim adipisicing voluptate ea ea eu aute. Adipisicing sunt ullamco eu dolor dolor ex do ea cillum ad velit.</p>
+    </div>
+    <div class="image-in-text"><img src="android-chrome-192x192.png" alt="Nice picture"></div>
+</div>
+
+<a href="#top" class="go-to-top">OK ↑ </a>
+
+</body>
+</html>
